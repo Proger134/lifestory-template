@@ -1595,11 +1595,13 @@
     width: 100%; }
   .calculate-block__checkbox {
     margin: 0 0 22px 0; }
-    .calculate-block__checkbox span {
+    .calculate-block__checkbox div {
       letter-spacing: 0.02em;
-      color: #fff; }
+      color: #fff;
+      padding-left: 40px;
+      width: auto; }
       @media (max-width: 768px) {
-        .calculate-block__checkbox span {
+        .calculate-block__checkbox div {
           font-size: 14px; } }
   .calculate-block__button {
     width: 100%; }
@@ -2724,8 +2726,9 @@
         display: block; } }
   .contact__checkbox {
     position: relative;
-    padding-left: 35px;
     max-width: 300px; }
+    .contact__checkbox div {
+      padding-left: 35px; }
   .contact__content {
     cursor: pointer; }
     .contact__content::before {

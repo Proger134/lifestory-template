@@ -1,0 +1,149 @@
+.custom-checkbox {
+  position: relative; }
+  .custom-checkbox__field {
+    opacity: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute; }
+  .custom-checkbox__content {
+    padding-left: 46px;
+    cursor: pointer; }
+    .custom-checkbox__content::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #000;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(194, 194, 194, 0.3);
+      border-radius: 2px; }
+    .custom-checkbox__content::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      background-image: url("../img/check.png");
+      background-position: center;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/../fonts/GothamPro.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/../fonts/GothamPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/../fonts/GothamPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "GothamPro", sans-serif;
+  background-color: var(--color-white); }
+
+body.lock {
+  overflow: hidden; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1300px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.js-validate-error-label {
+  color: #f20909 !important; }
+
+.js-validate-error-field {
+  color: var(--color-black) !important;
+  border: none !important; }
+
+@-webkit-keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+
+@keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -100px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+
+/*# sourceMappingURL=global.css.map */
